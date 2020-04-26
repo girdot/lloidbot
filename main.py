@@ -6,8 +6,8 @@ import turnipdb
 client = Bot(command_prefix = config.BOT_PREFIX)
 
 nm_help = "Returns everyones turnip prices for a given day.  Defaults to current day\nUsage: %snm [date: mm/dd/yy]" % config.BOT_PREFIX
-nr_help = "Set your turnip prices based on time of day.  PST timezone only for now\nUsage: %snr <your price>" % config.BOT_PREFIX
-nrd_help = "Set your turnip prices manually\nUsage:%snrd <your price> <date: mm/dd/yy> <am|pm>" % config.BOT_PREFIX
+nr_help = "Set your turnip prices based on time of day.  PST timezone only for now\nUsage: %snr <your price> [comment]" % config.BOT_PREFIX
+nrd_help = "Set your turnip prices manually\nUsage:%snrd <your price> <date: mm/dd/yy> <am|pm> [comment]" % config.BOT_PREFIX
 
 def smart_price_attributes():
     now = datetime.now()
